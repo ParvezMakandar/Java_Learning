@@ -38,18 +38,5 @@ public class Employee_Wage_Computation_Problem {
         else if (Is_Absent == num) {
             System.out.println("Daily Wage of the Employee is Rs " + Emp_Wage);
         }
-        // Use Case 3
-        if (Is_Full_Time == num){
-            Working_Hours = 8;
-            Emp_Wage = Working_Hours * Per_Hour_Wage;
-            System.out.println("Employee is Working full time and his wage is Rs : " + Emp_Wage);
-
-        }
-        else if (Is_Part_Time == num){
-            Working_Hours = 4;
-            Emp_Wage = Working_Hours * Per_Hour_Wage;
-            System.out.println("Employee is working part time and his wage is Rs : " + Emp_Wage);
-
-        }
     }
 }
