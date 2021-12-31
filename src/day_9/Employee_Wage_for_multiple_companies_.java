@@ -101,11 +101,6 @@ class Employee_Wage_for_multiple_companies
         return totalWage;
     }
 
-    private int getTotalEmpWage(String companyName)
-    {
-        return totalEmpWages.get(companyName);
-    }
-
     public static void main(String[] args)
     {
         Employee_Wage_for_multiple_companies employeeWageComputation = new Employee_Wage_for_multiple_companies();
@@ -113,8 +108,6 @@ class Employee_Wage_for_multiple_companies
         employeeWageComputation.addCompany("Crazzall", 5, 40, 170);
         employeeWageComputation.addCompany("1Clickdesign", 19, 10, 150);
         employeeWageComputation.calculateTotalWage();
-        String query = "Bridgelabz";
-        int totalWage = employeeWageComputation.getTotalEmpWage(query);
-        System.out.println("Total Employee Wage for " + query + " company is " + totalWage);
+
     }
 }
