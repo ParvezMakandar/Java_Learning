@@ -108,8 +108,7 @@ public class AddressBookSystem
     public void addPerson()
     {
         System.out.println("Enter the person details");
-        Scanner sc = new Scanner(System.in);
-            addContact();
+        addContact();
     }
     public static void main(String []args)
     {
