@@ -105,28 +105,22 @@ public class AddressBookSystem
         int index = searchExistingContact(search_pers);
         AddressBookSystem.address_book.remove(index);
     }
-
-    public void addMultiplePerson()
+    public void addPerson()
     {
-        System.out.println("Enter the number of persons whose details you want "
-                + "to add to the address book");
+        System.out.println("Enter the person details");
         Scanner sc = new Scanner(System.in);
-        int no_of_person = sc.nextInt();
-        for (int i=1;i<=no_of_person;i++)
-        {
             addContact();
-        }
     }
-
     public static void main(String []args)
     {
         System.out.println("Welcome to Address Book Program!");
-        AddressBookSystem add  = new AddressBookSystem();
         AddressBookSystem edit  = new AddressBookSystem();
         AddressBookSystem del  = new AddressBookSystem();
-        add.addMultiplePerson();
+        AddressBookSystem add  = new AddressBookSystem();
+        add.addPerson();
         edit.editExistingContact();
         del.deleteExistingContact();
+
     }
 
 }
