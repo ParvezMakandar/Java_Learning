@@ -2,7 +2,8 @@ package day_14.stack_and_queue;
 
 public class QueueImp
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Queue q = new Queue();
 
         q.enqueue(56);
