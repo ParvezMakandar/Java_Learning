@@ -24,7 +24,7 @@ public class MaximumNumber <T extends Comparable <T>>
             System.out.println(z);
         }
     }
-
+//
     public static void main(String[] args) {
         Integer xInt  = 3, yInt =4, zInt =5;
         Float xFl = 3.3f, yFl = 4.4f, zFl =5.5f;
